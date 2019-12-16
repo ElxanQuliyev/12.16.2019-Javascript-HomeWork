@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div id="allTags">
+    <input type="text" placeholder="email" id="email">
+    <input type="password" placeholder="password" id="password">
+    <input id="mybtn" type="submit" value="Login">
+</div>
+<script>
+var btn=document.getElementById("mybtn")
+btn.onclick=function(){
+    var email=document.getElementById("email").value;
+    var password=document.getElementById("password").value;
+   if(email=="Admin" && password=="admin123"){
+       alert("Admin xos gelmisiniz!")
+   } else{
+       alert("Email ve ya Parol Sehfdir!")
+   }
+
+}
+
+
+// var btn=document.getElementById("mybtn"); 
+// var alltag=document.getElementById("allTags")
+// btn.onclick=function(){
+//     var text= document.getElementById("mytext").value
+//     if(text.length>=3){
+//         var newP=document.createElement("p")
+//          newP.classList.add("text")
+//         newP.innerText=text;
+//         alltag.appendChild(newP)
+//         document.getElementById("mytext").value=""
+//     }else{
+//         alert("uzunluq 3-den boyuk olmalidir")
+//     }
+  
+// }
+
+</script>
+</body>
+</html>
